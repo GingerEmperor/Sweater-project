@@ -3,7 +3,7 @@
 
 <@c.page>
     ADD new user
-    ${message}
+    ${message?if_exists}
     <@l.login "/registration"/>
     <a href="/login">Login</a>
 </@c.page>
