@@ -2,8 +2,10 @@
 <#import "parts/login.ftlh" as l>
 
 <@c.page>
-    ADD new user
+    <div class="mb-1">
+        ADD new user
+    </div>
     ${message?if_exists}
-    <@l.login "/registration"/>
+    <@l.login "/registration" true/>
     <a href="/login">Login</a>
 </@c.page>
