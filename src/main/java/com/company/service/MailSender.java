@@ -19,8 +19,8 @@ public class MailSender {
 
         mailMessage.setFrom(username);
         mailMessage.setTo(emailTo);
-        mailMessage.setSubject(message);
-        mailMessage.setText("blabla");
+        mailMessage.setSubject(subject);
+        mailMessage.setText(message);
 
         mailSender.send(mailMessage);
     }
